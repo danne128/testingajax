@@ -9,7 +9,7 @@ var request = new XMLHttpRequest();
 request.onreadystatechange = function(req, res) {
 
     console.log("Nånting hände!");
-    console.log("Svaret (response) är " + res.responsText);
+    console.log("Svaret (response) är " + res.responseText);
 
 }
 
