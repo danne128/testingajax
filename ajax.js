@@ -6,9 +6,10 @@
 
 var request = new XMLHttpRequest();
 
-request.onreadystatechange = function() {
+request.onreadystatechange = function(req, res) {
 
     console.log("Nånting hände!");
+    console.log("Svaret (response) är " + res.responsText);
 
 }
 
