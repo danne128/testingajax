@@ -9,7 +9,13 @@ var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
 
     console.log("Nånting hände!");
-    console.log("Svaret (response) är " + request.responseText);
+
+    if (request.readyState == 4 && request.status == 200) {
+
+        console.log("Svaret (response) är " + request.responseText);
+
+    }
+
 
 }
 
