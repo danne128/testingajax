@@ -14,6 +14,9 @@ request.onreadystatechange = function() {
 
         console.log("Svaret (response) är " + request.responseText);
 
+        var data = request.responseText;
+        document.write(data)
+
     }
 
 
