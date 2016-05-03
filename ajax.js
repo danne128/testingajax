@@ -1,4 +1,4 @@
-// Javascript med AJAX
+/*// Javascript med AJAX
 // Vi använder AJAX för att hämta innehållet på en hemsida
 // Ajax hämtar data från någon address
 
@@ -24,3 +24,22 @@ request.onreadystatechange = function() {
 
 request.open('GET', 'http://mardby.se/AJK15G/lorem_text.php');
 request.send();
+*/
+
+jQuery.ajax({
+    url: "http://abandoned-killerwale-lkp8.rapidapi.io/random-number",
+    type: "GET",
+    contentType: "application/x-www-form-urlencoded",
+    data: {
+    },
+})
+.done(function(data, textStatus, jqXHR) {
+    console.log("HTTP Request Succeeded: " + jqXHR.status);
+    console.log(data);
+})
+.fail(function(jqXHR, textStatus, errorThrown) {
+    console.log("HTTP Request Failed");
+})
+.always(function() {
+    /* ... */
+});
